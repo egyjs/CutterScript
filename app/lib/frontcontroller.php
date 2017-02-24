@@ -7,10 +7,11 @@ class FrontController {
     const NOT_FOUND_Controller = 'MVC\Controller\NotFoundController';
     
     public $_controller = 'index';
-    private $_action     = 'default';
+    public $_action     = 'default';
     private $_params     = array();
     
     public $_Lcode;
+    public $_CAT;
 
 
 
@@ -57,6 +58,7 @@ class FrontController {
        $controller->setAction($this->_action);
        $controller->setParams($this->_params);
        $controller->setCode($this->_Lcode);
+       $controller->setCategory($this->_CAT);
        $controller->$actionName();
          
        

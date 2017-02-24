@@ -19,6 +19,7 @@ define('BOOTSTRAP_PATH', SRC_PATH . 'bootstrap' . SL);
 
 // Path of  define inc File VIEWS
 define('headerV_PATH', INC_PATH .'header.php');
+define('sidV_PATH', INC_PATH .'sidnav.php');
 define('footerV_PATH', INC_PATH .'footer.php');
 
 

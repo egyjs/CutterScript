@@ -15,6 +15,7 @@ class abstractController{
     protected $_action;
     protected $_params;
     protected $_Lcode;
+    protected $_CAT;
     
     //includere
     public $user_login;
@@ -54,7 +55,6 @@ class abstractController{
                 $this->myFunction->redirect('/');
             }
          }
-
     }
     
     public function NotFoundAction(){
@@ -72,6 +72,9 @@ class abstractController{
     }
     public function setCode($code) {
         $this->_Lcode = $code;
+    }
+    public function setCategory($code) {
+        $this->_CAT = $code;
     }
     protected function _view(){
         require_once  headerV_PATH;

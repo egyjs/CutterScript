@@ -10,7 +10,7 @@
      }  ?> alt="shortcut urls">
                     <div class="intro-text">
                         <?php if(!isset($this->msg)){ ?>
-                        <h1><span class="name">Start Shortcut URls</span></h1>
+                        <h1><span class="name">Shorten the direct link, or Get paid to share your links on the Internet! <i class="fa fa-money" aria-hidden="true"></i></span></h1>
                         <?php }  else { 
                             
                             echo $this->msg ;
@@ -43,3 +43,33 @@
             </div>
         </div>
     </header>
+    
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About Us</h2>
+                    <hr class="cut-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                <h3>About Cutter</h3>
+                    <p>Cutter is a free URL Shortener system created by <a class="btn btn-success" href="//fb.com/el3zahaby" >Abdulrahman El-zahaby</a>.
+                        Ease of use, fun-profit money, shorten your links without discomfort.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>About APIs</h3>
+                    <p>
+                    If you are a blogger and want to profit from the shortcut links,, so you have to work with us .. Shorten your links now without reference to the site, all you have is written in the Code are shortcut any link you want to automatically :)
+                    </p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="signup" class="btn btn-lg btn-outline">
+                        <i class="fa fa-angle-right"></i> Get started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -4,11 +4,6 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
-                    </div>
-                    <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
@@ -30,7 +25,16 @@
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <p>Cutter is a free URL Shortener system , created by <a  href="//fb.com/el3zahaby" >Abdulrahman El-zahaby</a>.</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Site Map</h3>
+                        <ul class="list-group">
+                            <a class="btn btn-success" href="<?= $blogurl ?>" >blog</a>
+                            <a class="btn btn-warning" href="<?= $blogurl; ?>/category/api" >api</a>
+                            <a class="btn btn-info" href="signin" >Sign In</a>
+                            <a class="btn btn-default" href="signup" >Sign Up</a>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,8 @@
+<?php
+$homeurl = "http://" . $_SERVER['SERVER_NAME'] ; 
+$blogurl = "//blog." . $_SERVER['SERVER_NAME']; ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,23 +12,17 @@
     <!-- All in One SEO Pack -->
 	<!-- All in One SEO Pack -->
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
-    <meta name="description" content="قص روابط جوجل قص روابط الصور كيوت قص  بدون اعلانات Cutter URL Shortener">
-    <meta content='shortcut,link,to,desktop shortcut,link,shortcut,links,not,working shortcut,Cutter URL Shortener' name='keywords'/>
+    <meta name="description" content="خدمة اختصار الروابط الأولى من نوعها برؤية عربية احترافية.. اختصر روابطك الطويلة بضغطة زر إلى روابط قصيرة يسهل تذكرها.">
+    <meta content='اختصار روابط,إختصار روابط,أختصار روابطقص روابط,اختصار لنكات,اختصار الروابط تويتر,اختصار روابط التويتر,اختصار روابط اليوتيوب,قص الروابط,اختصار الروابط للبلاك بيري,اختصار الروابط الطويلة,قص الروابط الطويلة,Cutter URL Shortener' name='keywords'/>
     <link href='Cutter' rel='author'/>
-    
-    <meta property="og:url"           content="<?php echo $_SERVER['HTTP_HOST']; ?>" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Cutter" />
-
-    <meta property="og:image"         content="img/profile.png" />
     <base href="/">
     
-<?php if($this->_controller != "to") {echo '<link rel="icon" type="image/x-icon" href="favicon.ico" /> <title>Cutter URL Shortener</title>'; 
+<?php if($this->_controller != "to") { ?>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" /> <title>Cutter URL Shortener</title>
 
-}  else { ?>  
+<?php }  else { ?>  
         <title><?php echo $this->myFunction->get_title( $this->row1['l_name'] ); ?></title>
         <link rel="shortcut icon" href="<?php echo $this->myFunction->get_icon( $this->row1['l_name'],$this->row1['l_name'] ); ?>">
-
             <?php } ?>
 
     <!-- Bootstrap Core CSS -->
@@ -62,14 +61,17 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <?php  if($this->_controller == "to"){ ?>
-                <button type="button" class="navbar-toggle" id="rep-mob" >
-                    <a class="btn-4" ><span  id='count'>5</span></a> <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle btn btn-sm btn-1" id="rep-mob" >
+                    <a class="" ><span  id='count'>5</span></a>
                 </button>
                 <?php }else{ ?>
                 <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>                    <?php } ?>
                 <a class="navbar-brand" href="/">  Start Bootstrap</a>
+                <?php if($this->_controller == "to"){ ?> 
+                <a href="http://www.revenuehits.com/lps/pubref/?ref=@RH@BowznPjidyMkYGrVMt5ZfuiYnnC3Du8g" target="_blank"><img src="http://revenuehits.com/publishers/media/img/v2/468x60_v2.gif" border="0"></a>
+               <?php } ?>
                 <h2 class="noneForSeo">
                     قص اللينكات
 قص ال يوتيوب
@@ -97,10 +99,13 @@
                     <li class="page-scroll" id="rep">
                         <a class="btn-4" ><span class="" id='count-mob'>5</span></a>
                     </li>
-                        
+                    
                     </li>                        
                     <?php }else{ ?>
                     <?php if($this->user_login->is_logged_in() == ""){ ?>
+                    <li class="page-scroll active">
+                        <a href="<?= $blogurl; ?>/category/api"><i class="fa fa fa-handshake-o" ></i>&nbsp;My easy API</a>
+                    </li>
                     <li class="page-scroll">
                         <a href="signup"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Sign up</a>
                     </li>
@@ -110,7 +115,7 @@
                             <li>
                                 <div class="row">
                                     <div class="col-md-12">
-<!-- 								Login via
+<!--                                    Login via
                                             <div class="social-buttons">
                                                     <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
                                                     <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
@@ -145,7 +150,7 @@
                                 <li role="presentation"><a href="account"><i class="fa fa fa-gear" aria-hidden="true"></i>&nbsp;My Account</a></li>
                                 <li class="page-scroll"><a href="logout"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a></li>
                                 <li role="presentation" class="divider"></li>
-                                <li role="presentation"><a href="#"><i class="fa fa fa-handshake-o" ></i>&nbsp;My API</a></li>
+                                <li role="presentation"><a href="blog/api"><i class="fa fa fa-handshake-o" ></i>&nbsp;My API</a></li>
                             </ul>
                     </li>
                   <?php }
@@ -157,4 +162,3 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <h1 class="noneForSeo" ><a class="noneForSeo" href="account">my account</a></h1>
